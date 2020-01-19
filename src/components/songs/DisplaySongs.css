@@ -1,0 +1,12 @@
+.react-player__preview {
+    display: none;
+    background-color: red;
+}
+.song-links{
+    color: dimgrey;
+    text-decoration: none;
+}
+.song-links:hover{
+    color: rgba(0, 0, 0, 0.94);
+    text-decoration: none;
+}
