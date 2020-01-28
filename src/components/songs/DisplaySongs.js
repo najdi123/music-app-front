@@ -48,6 +48,9 @@ const DisplaySongs = () => {
                                 <p className="text-center"> از {item.singer}</p>
                                 <img width="100%" src={"http://localhost:5000/"+item.imageURL} alt=""/>
 
+                                <p>{item.views} views</p>
+                                <p>category: {item.category}</p>
+
                                 <p>برای پخش و دانلود کلیک کنید</p>
                             </Link>
                         </div>

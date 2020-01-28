@@ -1,0 +1,22 @@
+.AdminSubmitButton {
+
+}
+.AdminSubmitButton:link {
+    color: white;
+}
+
+/* visited link */
+.AdminSubmitButton:visited {
+    color: white;
+}
+
+/* mouse over link */
+.AdminSubmitButton:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+.AdminSubmitButton:active {
+    color: white;
+}

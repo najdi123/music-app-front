@@ -5,7 +5,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Work from "./pages/Work";
 import Projects from "./pages/Projects";
-import Admin from "./pages/Admin";
+import Admin from "./pages/AdminPages/Admin";
+import AdminSingleSongEdit from "./pages/AdminPages/EditSong";
+
 import SignUp from "./pages/user/SignUp";
 import SignIn from "./pages/user/SignIn";
 import Navbar from "./components/Navbar";
@@ -23,6 +25,7 @@ const App = () => {
                 <Route exact path='/work' component={Work} />
                 <Route exact path='/projects' component={Projects} />
                 <Route exact path='/admin' component={Admin} />
+                <Route exact path='/EditSong' component={AdminSingleSongEdit} />
 
                 <Route exact path='/signup' component={SignUp} />
                 <Route exact path='/signin' component={SignIn} />

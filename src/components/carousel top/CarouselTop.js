@@ -24,9 +24,9 @@ const indicator = (i) => {
 
 const imageItem = (i) => {
     if (i === 0) {
-        return "carousel-item active"
+        return "carousel-item active bg-dark"
     } else {
-        return "carousel-item"
+        return "carousel-item bg-dark"
     }
 };
 
@@ -42,7 +42,7 @@ const CarouselTop = () => {
                 </ol>
                 <div className="carousel-inner">
                     {data.map((item, i) =>
-                        <div key={i} className={imageItem(i)}>
+                        <div key={i} className={imageItem(i) }>
                             <img src={item.image} className="d-block w-100" alt="..."/>
 
                             {/* carousel caption for screen sizes larger than sm */}
@@ -54,7 +54,7 @@ const CarouselTop = () => {
 
                             </div>
                             {/* carousel caption for screen sizes of sm and xs */}
-                            <div className="carousel-caption-small text-center d-block d-sm-none">
+                            <div className="carousel-caption-small text-center d-block d-sm-none bg-dark text-white">
                                 <h5>{item.songName}</h5>
                                 <p>{item.singer + " "}از </p>
                             </div>

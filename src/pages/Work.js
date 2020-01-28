@@ -1,10 +1,10 @@
 import React from 'react';
-import SingleSongEditOrDelete from "../components/songs/SingleSongEditOrDelete";
+import SingleSong from "../components/songs/SingleSong";
 
 const Home = () => {
     return (
         <div>
-            <SingleSongEditOrDelete/>
+            <SingleSong/>
 
         </div>
     );
