@@ -8,13 +8,19 @@ const OtherSongsFromSinger = (props) => {
 
     useEffect(() => {
 
-        //fetch(`http://localhost:5000/api/showSongsBySinger/singer?singer=${singerName}`)
-        fetch(`http://localhost:5000/api/showSongsBySinger/singer?singer=${props.data.singer}`)
-            .then(res => res.json())
-            .then(data2 => (setData2(data2.reverse())))
-            .catch(err => console.log(err))
+        const fetchData2 = async () => {
+            console.log('async fetch data2')
+            let res = await fetch(`http://localhost:5000/api/showSongsBySinger/singer?singer=${props.data.singer}`);
+            let response = await res.json();
+            setData2(response)
+        };
+        fetchData2();
+        // fetch(`http://localhost:5000/api/showSongsBySinger/singer?singer=${props.data.singer}`)
+        //     .then(res => res.json())
+        //     .then(data2 => (setData2(data2.reverse())))
+        //     .catch(err => console.log(err))
 
-    }, [props.data])
+    }, [props.data]);
 
     var vh;
     var imageHeight = window.innerHeight;
@@ -42,9 +48,11 @@ const OtherSongsFromSinger = (props) => {
         <div className="row container">
 
             {console.log(typeof singerName)}
-            {console.log(data2)}
+            {/*{console.log(data2)}*/}
+
             {data2.map((item, i) =>
                 <Link
+                    key={i}
                     className="song-links col-sm-6 col-md-4 "
                     to={{
                         pathname: `/work`,
@@ -53,7 +61,7 @@ const OtherSongsFromSinger = (props) => {
                         }
                     }}
                 >
-                    <div key={i} className={marginLeft}>
+                    <div  className={marginLeft}>
                         <img src={"http://localhost:5000/" + item.imageURL} alt={item.songName} className="songImage "
                              style={{width: vh, height: vh}}/>
 
@@ -65,7 +73,7 @@ const OtherSongsFromSinger = (props) => {
                         </div>
                         <p>
                             {item.views} :بازدید
-                            <span className="ml-4">Likes: 12</span>
+                            <span className="ml-4">Likes: {item.likes.length}</span>
                         </p>
                     </div>
                 </Link>

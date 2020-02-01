@@ -26,7 +26,7 @@ const DisplaySongs = () => {
             .then(res => setData(res))
             .catch(err => console.log(err))
 
-    },[])
+    },[songId]);
 
     const DeleteSong = () => {
         return fetch(`http://localhost:5000/api/showSong/${songId}`, {method: 'DELETE'})
@@ -36,7 +36,7 @@ const DisplaySongs = () => {
                 return res
             })
             .catch(err => console.error(err))
-    }
+    };
 
     const EditSong = (e) => {
         e.preventDefault();
@@ -63,7 +63,7 @@ const DisplaySongs = () => {
         //         return res
         //     })
         //     .catch(err => console.error(err))
-    }
+    };
 
     return (
         <div className="m-5 row">

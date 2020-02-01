@@ -12,7 +12,7 @@ import pic3 from '../images/multiCarousel/c3.jpg'
 import pic4 from '../images/multiCarousel/c4.jpg'
 import pic5 from '../images/multiCarousel/c5.jpg'
 import pic6 from '../images/multiCarousel/c6.jpg'
-import loggedReducer from "../../reducers/isSigned";
+
 
 
 const MultiItemCarousel = () => {

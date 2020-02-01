@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import '../DisplaySongs.css'
 import {Link} from "react-router-dom";
-//import loggedReducer from "../../reducers/isSigned";
 
 
 const DisplaySongs = () => {

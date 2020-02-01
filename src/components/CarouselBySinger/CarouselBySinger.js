@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import '../NewMultiItemCarousel/NewMultiItemCarousel.css'
 
 import '../NewMultiItemCarousel/NewMultiItemCarousel.css'
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';

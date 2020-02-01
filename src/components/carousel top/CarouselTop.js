@@ -4,8 +4,8 @@ import './CarouselTop.css'
 import pic1 from '../images/img (31).jpg'
 import pic2 from '../images/img (33).jpg'
 import pic3 from '../images/img (35).jpg'
-import pic4 from '../images/oliver tree - movement.png'
-import ReactPlayer from "react-player";
+// import pic4 from '../images/oliver tree - movement.png'
+
 
 const data = [
     {image: pic1, songName: "Im fly", singer: "Ali"},

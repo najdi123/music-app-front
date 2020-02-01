@@ -6,13 +6,6 @@ import {Link} from "react-router-dom";
 import Carousel from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-import pic1 from '../images/multiCarousel/c1.jpg'
-import pic2 from '../images/multiCarousel/c2.jpg'
-import pic3 from '../images/multiCarousel/c3.jpg'
-import pic4 from '../images/multiCarousel/c4.jpg'
-import pic5 from '../images/multiCarousel/c5.jpg'
-import pic6 from '../images/multiCarousel/c6.jpg'
-import loggedReducer from "../../reducers/isSigned";
 
 
 const NewMultiItemCarousel = () => {

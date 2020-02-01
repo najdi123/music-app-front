@@ -25,8 +25,8 @@ const Projects = () => {
         })
             // .then(res => return res.json())
             .then(res => (
-                console.log('first'),
-                console.log(res),
+                // console.log('first'),
+                // console.log(res),
                 res.json()
                 )
             )
@@ -35,7 +35,7 @@ const Projects = () => {
                 console.log(data),
                 console.log('end of req')
             ).catch(err => console.log(err))
-    }
+    };
 
 
     return(

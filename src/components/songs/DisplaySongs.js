@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
-import ReactPlayer from 'react-player'
+// import ReactPlayer from 'react-player'
 import './DisplaySongs.css'
 import {Link} from "react-router-dom";
-import loggedReducer from "../../reducers/isSigned";
 
 
 const DisplaySongs = () => {
@@ -48,7 +47,9 @@ const DisplaySongs = () => {
                                 <p className="text-center"> از {item.singer}</p>
                                 <img width="100%" src={"http://localhost:5000/"+item.imageURL} alt=""/>
 
-                                <p>{item.views} views</p>
+                                <p className="d-inline-block ml-3">{item.views} views</p>
+
+                                <p className="d-inline-block ml-3">{item.likes.length} likes</p>
                                 <p>category: {item.category}</p>
 
                                 <p>برای پخش و دانلود کلیک کنید</p>

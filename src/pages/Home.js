@@ -1,8 +1,7 @@
 import React from 'react';
-import Layout from "../components/Layout";
+// import Layout from "../components/Layout";
 
 import DisplaySongs from "../components/songs/DisplaySongs";
-import UploadSong from "../components/songs/Admin Components/UploadSong";
 import CarouselTop from "../components/carousel top/CarouselTop";
 import MultiItemCarousel from "../components/MultiItemCarousel/MultiItemCarousel";
 import NewMultiItemCarousel from "../components/NewMultiItemCarousel/NewMultiItemCarousel";
@@ -22,10 +21,6 @@ const Home = () => {
                 <div className="col-11 col-md-8 offset-md-3  offset-1">
                     <DisplaySongs/>
                 </div>
-                {/*<div className="col-12 col-sm-5 offset-1 mb-5">*/}
-                {/*    <UploadSong/>*/}
-                {/*</div>*/}
-
 
             </div>
 

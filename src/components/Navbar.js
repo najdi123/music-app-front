@@ -20,21 +20,21 @@ const Navbar = ({ history }) => {
                         Home
                     </Link>
                 </li>
-                <li className="nav-item ">
-                    <Link to="/about" className="nav-link" style={isActive(history, '/about')}>
-                        About
-                    </Link>
-                </li>
-                <li className="nav-item ">
-                    <Link to="/projects" className="nav-link" style={isActive(history, '/projects')}>
-                        Projects
-                    </Link>
-                </li>
-                <li className="nav-item ">
-                    <Link to="/admin" className="nav-link" style={isActive(history, '/admin')}>
-                        Admin
-                    </Link>
-                </li>
+                {/*<li className="nav-item ">*/}
+                {/*    <Link to="/about" className="nav-link" style={isActive(history, '/about')}>*/}
+                {/*        About*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
+                {/*<li className="nav-item ">*/}
+                {/*    <Link to="/projects" className="nav-link" style={isActive(history, '/projects')}>*/}
+                {/*        Projects*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
+                {/*<li className="nav-item ">*/}
+                {/*    <Link to="/admin" className="nav-link" style={isActive(history, '/admin')}>*/}
+                {/*        Admin*/}
+                {/*    </Link>*/}
+                {/*</li>*/}
 
                 <li className="nav-item ml-5">
                     <Link to="/signup" className="nav-link" style={isActive(history, '/signup')}>
